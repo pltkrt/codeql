@@ -15,13 +15,12 @@ jobs:
       contents: read
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
       - name: print
         run: |
           echo pwd
-        script: bash
+        shell: bash
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v1
