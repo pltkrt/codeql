@@ -20,6 +20,9 @@ jobs:
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v1
+        config-file: .github/codeql/codeql-config.yml
+          description: "Path of the config file to use"
+          required: true
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
