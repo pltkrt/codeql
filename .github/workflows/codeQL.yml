@@ -18,6 +18,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: print
+        run: |
+          echo pwd
+        script: bash
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v1
         with:
