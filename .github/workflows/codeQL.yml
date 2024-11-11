@@ -15,10 +15,6 @@ jobs:
       contents: read
 
     steps:
-      - name: print
-        run: |
-          echo pwd
-        shell: bash
       - name: Checkout repository
         uses: actions/checkout@v2
 
